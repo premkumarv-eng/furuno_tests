@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.10.12 on linux)" generated="2026-07-01T13:01:13.785374" rpa="true" schemaversion="5">
+<suite id="s1" name="Calculator" source="/home/vvdn/FURUNO_AUTOMATION/Furuno_Tests/Testsuites/calculator.robot">
+<test id="s1-t1" name="Verify Addition" line="7">
+<kw name="Add Two Numbers" owner="cal_keyword">
+<kw name="Add Numbers" owner="Calculator">
+<msg time="2026-07-01T13:01:13.812728" level="INFO">${result} = 30</msg>
+<var>${result}</var>
+<arg>${a}</arg>
+<arg>${b}</arg>
+<status status="PASS" start="2026-07-01T13:01:13.812486" elapsed="0.000277"/>
+</kw>
+<return>
+<value>${result}</value>
+<status status="PASS" start="2026-07-01T13:01:13.812828" elapsed="0.000043"/>
+</return>
+<msg time="2026-07-01T13:01:13.812983" level="INFO">${result} = 30</msg>
+<var>${result}</var>
+<arg>10</arg>
+<arg>20</arg>
+<status status="PASS" start="2026-07-01T13:01:13.811782" elapsed="0.001220"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Result is ${result}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2026-07-01T13:01:13.813150" elapsed="0.000311"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-07-01T13:01:13.813773" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>30</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-07-01T13:01:13.813563" elapsed="0.000256"/>
+</kw>
+<status status="PASS" start="2026-07-01T13:01:13.810880" elapsed="0.003051"/>
+</test>
+<status status="PASS" start="2026-07-01T13:01:13.786539" elapsed="0.027760"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Calculator" id="s1" pass="1" fail="0" skip="0">Calculator</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
